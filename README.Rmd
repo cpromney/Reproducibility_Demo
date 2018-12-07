@@ -1,0 +1,14 @@
+---
+title: "How to make a box plot"
+output: html_document
+---
+
+load library(ggplot2)
+load the iris data set in ggplot
+set the x axis to Species and y to Petal.Length and color the graph
+based on species
+make a box plot and get rid of the legend
+
+ggplot(iris, aes(x=Species, y=Petal.Length, fill = Species)) + 
+  geom_boxplot() +
+  theme(legend.position="none")
